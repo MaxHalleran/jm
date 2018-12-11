@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ContentfulService } from './services/contentful.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'jm';
+
+  project$: Observable<any>;
+
+  constructor(private contentful: ContentfulService) { }
+
+  ngOnInit() {
+    this.contentful.logContent('4qUevblqBawaEYSOkIUsYi');
+
+    this.contentful.getEntries();
+
+    this.project$ = this.contentful.getContent('4qUevblqBawaEYSOkIUsYi');
+  }
 }
