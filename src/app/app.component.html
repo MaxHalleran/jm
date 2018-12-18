@@ -1,14 +1,3 @@
-<div *ngIf="project$ | async as project">
-  <h1>{{project.title}}</h1>
-  <time>
-    Published on {{project.createdAt | date: 'fullDate'}}
-  </time>
+<app-navbar></app-navbar>
 
-  <h3>Tags</h3>
-  <span *ngFor="let tag of project.tags">
-    {{tag}}
-  </span>
-
-  <div [innerHTML]="project.body | mdToHtml"></div>
-
-</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+<div class="card" style="width: 80%;">
+  <img class="card-img-top" src="{{project.pictures[0].fields.file.url}}" alt="Card image cap">
+  <div class="card-body">
+    <p>{{project.pictures[0].fields.file.url}}</p>
+    <h5 class="card-title">{{project.title}}</h5>
+    <p class="card-text" [innerHTML]="project.body | mdToHtml"></p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
