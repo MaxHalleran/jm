@@ -1,6 +1,10 @@
-# Jm
+# Custom Cuts YYC
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+A website for custom cuts yyc that presents and details their projects.
+
+## Current focus
+
+-Theming, throwing a simple theme together to collect and place information, this theme can be changed or completely rewritten later.
 
 ## Development server
 
