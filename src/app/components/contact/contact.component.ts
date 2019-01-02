@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, from } from 'rxjs';
+
 import { ContentfulService } from '../../services/contentful.service';
 
 @Component({

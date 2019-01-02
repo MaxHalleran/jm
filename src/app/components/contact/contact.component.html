@@ -1,5 +1,14 @@
 <div *ngIf="contact$ | async as contact">
-  <h1>{{contact.name}}</h1>
-  <h2>{{contact.email}}</h2>
-  <h3>{{contact.phoneNumber}}</h3>
+
+  <div class="jumbotron">
+    <h1 class="display-3">{{contact.name}}</h1>
+    <p class="lead">Contact me using my email, phone number or over instagram</p>
+    <hr class="my-4">
+    <p class="lead"><a href="mailto:{{contact.email}}">Email: {{contact.email}}</a></p>
+    <hr class="my-4">
+    <p class="lead"><a href="tel:{{contact.phoneNumber}}">Phone Number: {{contact.phoneNumber}}</a></p>
+    <!-- <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p> -->
+  </div>
 </div>

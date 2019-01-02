@@ -1,9 +1,13 @@
 <div class="card" style="width: 80%;">
-  <img class="card-img-top" src="{{project.pictures[0].fields.file.url}}" alt="Card image cap">
+  <div *ngIf="project.pictures">
+    <p>This has pictures</p>
+    <span *ngFor="let picture of project.pictures; let i = index;">
+      <img src="{{this.fetchPic(picture.fields.file.url)}}" alt="A specific picture.">
+    </span>
+  </div>
   <div class="card-body">
-    <p>{{project.pictures[0].fields.file.url}}</p>
     <h5 class="card-title">{{project.title}}</h5>
-    <p class="card-text" [innerHTML]="project.body | mdToHtml"></p>
+    <p class="card-text" [innerHTML]="project.body.substr(0, (project.body.length < 500 ? project.body.length - 1 : 500)) | mdToHtml"></p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>

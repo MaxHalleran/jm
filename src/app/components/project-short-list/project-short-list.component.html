@@ -1,4 +1,3 @@
 <div *ngIf="projects$ | async as projects">
-  <p>projects worked !!!</p>
     <app-project-summary *ngFor="let project of projects;" [project]="project.fields"></app-project-summary>
 </div>
