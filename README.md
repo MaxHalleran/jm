@@ -6,6 +6,21 @@ A website for custom cuts yyc that presents and details their projects.
 
 -Theming, throwing a simple theme together to collect and place information, this theme can be changed or completely rewritten later.
 
+## Theme to do
+
+- Clean theme is being implemented.
+- Clean Nav must be implemented.
+- Clean Header must be implemented with default wood grain background.
+- Different wood grain patterns for contact and about sections.
+- Project list view with pagination.
+- Project detailed view with photo gallery header instead of default wood grain header background.
+
+## Possible themes
+
+https://startbootstrap.com/template-overviews/clean-blog/
+
+https://startbootstrap.com/template-overviews/stylish-portfolio/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -26,6 +41,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
