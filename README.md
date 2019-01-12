@@ -5,6 +5,7 @@ A website for custom cuts yyc that presents and details their projects.
 ## Current focus
 
 -Theming, throwing a simple theme together to collect and place information, this theme can be changed or completely rewritten later.
+-Fonts, picking out fonts and adding them in.
 
 ## Theme to do
 

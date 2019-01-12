@@ -4,27 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MdToHtmlPipe } from './pipes/md-to-html.pipe';
-import { PostsComponent } from './components/posts/posts.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { AboutComponent } from './components/about/about.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProjectShortListComponent } from './components/project-short-list/project-short-list.component';
-import { ProjectSummaryComponent } from './components/project-summary/project-summary.component';
-import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
-import { ProjectsListComponent } from './components/projects-list/projects-list.component';
+import { CleanNavComponent } from './components/clean-nav/clean-nav.component';
+import { CleanHamburgerComponent } from './components/clean-hamburger/clean-hamburger.component';
+import { CleanHomeComponent } from './components/clean-home/clean-home.component';
+import { CleanProjectListComponent } from './components/clean-project-list/clean-project-list.component';
+import { CleanProjectComponent } from './components/clean-project/clean-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MdToHtmlPipe,
-    PostsComponent,
-    ContactComponent,
-    AboutComponent,
-    NavbarComponent,
-    ProjectShortListComponent,
-    ProjectSummaryComponent,
-    ProjectDetailComponent,
-    ProjectsListComponent,
+    CleanNavComponent,
+    CleanHamburgerComponent,
+    CleanHomeComponent,
+    CleanProjectListComponent,
+    CleanProjectComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,19 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // import the components to show
-import { ContactComponent } from './components/contact/contact.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProjectShortListComponent } from './components/project-short-list/project-short-list.component';
-import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
-import { ProjectsListComponent } from './components/projects-list/projects-list.component';
+import { CleanHomeComponent } from './components/clean-home/clean-home.component';
+import { CleanProjectListComponent } from './components/clean-project-list/clean-project-list.component';
+import { CleanProjectComponent } from './components/clean-project/clean-project.component';
+
 
 // the routes and their coresponding components
 const routes: Routes = [
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '', component: ProjectShortListComponent },
-  { path: 'path/:id', component: ProjectDetailComponent },
-  { path: 'projectsList', component:ProjectsListComponent },
+  { path: '', component: CleanHomeComponent },
+  { path: 'projects/:id', component: CleanProjectListComponent },
+  { path: 'project/:id', component: CleanProjectComponent },
 ];
 
 @NgModule({
